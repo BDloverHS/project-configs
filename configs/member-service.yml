@@ -44,9 +44,7 @@ springdoc:
 
   #cors 설정
   cors:
-    allowed:
-      - https://hswoo-pintech.koreait.xyz
-      - http://localhost:3000
+    allowed: https://hswoo-pintech.koreait.xyz, http://localhost:3000
   # 프론트엔드 도메인
   front:
-    domain: https://hswoo-pintech.koreait.xyz,http://localhost:3000
+    domain: https://hswoo-pintech.koreait.xyz, http://localhost:3000

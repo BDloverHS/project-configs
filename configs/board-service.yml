@@ -1,5 +1,5 @@
 server:
-  port: 3002
+  port: 3003
 
 spring:
   # 레디스 설정
@@ -8,7 +8,7 @@ spring:
       host: ${redis.host}
       port: ${redis.port}
 
-  # 데이터베이스 설정
+  # 데이터 베이스 설정
   datasource:
     driverClassName: oracle.jdbc.driver.OracleDriver
     url: jdbc:oracle:thin:@${db.host}:XE
@@ -36,7 +36,6 @@ springdoc:
   version: '1.0.0'
   api-docs:
     path: /api-docs
-  # 응답쪽 컨텐트타입 consumes
   default-consumes-media-type: application/json
   default-produces-media-type: application/json
   swagger-ui:
@@ -47,7 +46,6 @@ springdoc:
     doc-expansion: none
   paths-to-match:
     - /**
-
 
 # cors 설정
 cors:
